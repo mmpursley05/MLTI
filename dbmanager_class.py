@@ -1,7 +1,5 @@
 import sqlite3
 import pandas as pd
-import tkinter as tk
-from tkinter import filedialog
 from uploader import df, workflow
 
 if workflow == 'editor':
@@ -10,7 +8,8 @@ else:
     pass
 
 organization_name = 'mlti'
-deal_name = input("Deal Name: ")
+# deal_name = input("Deal Name: ")
+deal_name = ""
 
 df['organization'] = organization_name
 df['deal'] = deal_name
